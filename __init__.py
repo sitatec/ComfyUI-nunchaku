@@ -1,14 +1,14 @@
 # only import if running as a custom node
-from .nodes.lora import NunchakuFluxLoraLoader
-from .nodes.models import (
+from .comfyui_nunchaku.lora import NunchakuFluxLoraLoader
+from .comfyui_nunchaku.models import (
     NunchakuFluxDiTLoader,
     NunchakuPulidApply,
     NunchakuPulidLoader,
     NunchakuTextEncoderLoader,
     NunchakuTextEncoderLoaderV2,
 )
-from .nodes.preprocessors import FluxDepthPreprocessor
-from .nodes.tools import NunchakuModelMerger
+from .comfyui_nunchaku.preprocessors import FluxDepthPreprocessor
+from .comfyui_nunchaku.tools import NunchakuModelMerger
 
 NODE_CLASS_MAPPINGS = {
     "NunchakuFluxDiTLoader": NunchakuFluxDiTLoader,

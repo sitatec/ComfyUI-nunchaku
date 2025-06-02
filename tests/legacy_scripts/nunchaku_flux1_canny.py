@@ -100,7 +100,7 @@ def import_custom_nodes() -> None:
     import execution
     import server
 
-    from nodes import init_extra_nodes
+    from comfyui_nunchaku import init_extra_nodes
 
     # Creating a new event loop and setting it as the default loop
     loop = asyncio.new_event_loop()
@@ -114,7 +114,7 @@ def import_custom_nodes() -> None:
     init_extra_nodes()
 
 
-from nodes import NODE_CLASS_MAPPINGS
+from comfyui_nunchaku import NODE_CLASS_MAPPINGS
 
 
 def main(precision: str):
